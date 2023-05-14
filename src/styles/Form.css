@@ -68,3 +68,19 @@ form {
 .sandwichValue .ant-form-item .ant-input-number{
   width: 100%;
 }
+
+.fireworksContainer{
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+p{
+  color: yellow;
+  font-weight: bold;
+  font-size: 200%;
+}

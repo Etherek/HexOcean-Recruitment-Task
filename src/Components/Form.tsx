@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../styles/Form.css'
 import { Form, Input, Select, InputNumber, Button } from 'antd';
-
+import { Fireworks } from '@fireworks-js/react'
 const { Option } = Select;
 
 type DishType = 'pizza' | 'soup' | 'sandwich';
@@ -131,6 +131,7 @@ const DishesForm = () => {
   };
 
   return (
+    <div>
     <div className='dishesFormContainer'>
     <Form<FormData> form={form}>
       <div className='dishName'>
@@ -215,6 +216,12 @@ const DishesForm = () => {
 
     </Form>
 
+    </div>
+    {isFetchSuccess && (
+      <div className='fireworksContainer'>
+        <Fireworks />
+      </div>
+    )}
     </div>
   );
   
