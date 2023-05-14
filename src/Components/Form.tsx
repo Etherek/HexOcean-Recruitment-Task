@@ -166,11 +166,11 @@ const DishesForm = () => {
         <div className='pizzaValues'>
           <Form.Item label="Number of slices" name="no_of_slices" rules={[{ required: true, message: 'Please enter the number of slices' }]} validateStatus={isNumberOfSlices ? 'success' : form.getFieldError('no_of_slices') ? 'error' : ''}
   help={form.getFieldError('no_of_slices')?.[0]}>
-            <InputNumber min={1} onChange={otherInputsChange}/>
+            <InputNumber min={1}  max={8} onChange={otherInputsChange}/>
           </Form.Item>
           <Form.Item label="Diameter" name="diameter" rules={[{ required: true, message: 'Please enter the diameter' }]} validateStatus={isDiameter ? 'success' : form.getFieldError('diameter') ? 'error' : ''}
   help={form.getFieldError('diameter')?.[0]}>
-            <InputNumber min={0} step={0.1}   onChange={otherInputsChange}/>
+            <InputNumber min={18} step={0.1} max={64} onChange={otherInputsChange}/>
           </Form.Item>
         </div>
       )}
@@ -189,7 +189,7 @@ const DishesForm = () => {
         <Form.Item  label="Number of slices of bread" name="slices_of_bread" rules={[{ required: true, message: 'Please enter the number of slices' }]} validateStatus={isNumberOfBreadSlices ? 'success' : form.getFieldError('slices_of_bread') ? 'error' : ''}
         help={form.getFieldError('slices_of_bread')?.[0]}>
           <div className='sandwichValueInput'>
-          <InputNumber min={1}  onChange={otherInputsChange}/>
+          <InputNumber min={1} max={16}  onChange={otherInputsChange}/>
           </div>
         </Form.Item>
         </div>
