@@ -1,0 +1,70 @@
+body {
+  height: 100%;
+  background-color: black;
+}
+.dishesFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+
+form {
+  background-color: rgb(189, 186, 186);
+  border-radius: 20px;
+  min-width: 60%;
+
+}
+.dishName{
+  margin: auto;
+  margin-top: 5%;
+  max-width: 60%;
+}
+
+.preparationTime{
+  margin: auto;
+  max-width: 60%;
+}
+.choosingDishType{
+  margin: auto;
+  max-width: 60%;
+}
+.pizzaValues {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.soupValue {
+  width: 60%;
+  display: flex;
+  margin: auto;
+
+}
+.sandwichValue {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  
+}
+.pizzaValues .ant-form-item{
+  width: 100%;
+}
+.pizzaValues .ant-form-item .ant-input-number{
+  width: 100%;
+}
+.soupValue .ant-form-item{
+  width: 100%;
+}
+.soupValue .ant-form-item .ant-input-number{
+  width: 100%;
+}
+.sandwichValue .ant-form-item{
+  width: 100%;
+}
+.sandwichValue .ant-form-item .ant-input-number{
+  width: 100%;
+}
