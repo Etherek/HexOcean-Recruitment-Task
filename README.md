@@ -1,7 +1,7 @@
-Project created as a recruitment task for HexOcean company.
-It is a web application built with React and Typescript.
-The application allows the user to add various types of dishes to the database.
-The application uses AntDesign for form handling and data validation.
+Project created as a recruitment task for HexOcean company.\
+It is a web application built with React and Typescript.\
+The application allows the user to add various types of dishes to the database.\
+The application uses AntDesign for form handling and data validation.\
 
 # Getting Started with Create React App
 
